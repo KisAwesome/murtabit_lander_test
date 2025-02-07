@@ -2,7 +2,6 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {
-  CheckCircle,
   CreditCard,
   BarChart3,
   BookOpen,
@@ -208,7 +207,13 @@ export default function Home() {
   )
 }
 
-function FeatureCard({ icon, title, description }) {
+interface FeatureCardProps {//+
+  icon: React.ReactNode;//+
+  title: string;//+
+  description: string;//+
+}//+
+//+
+function FeatureCard({ icon, title, description }: FeatureCardProps) {//+
   return (
     <Card>
       <CardHeader>
@@ -224,7 +229,17 @@ function FeatureCard({ icon, title, description }) {
   )
 }
 
-function PricingCard({ title, price, description, features ,subtext,buttonText,processingRates}) {
+interface PricingCardProps {
+  title: string;
+  price: string;
+  description: string;
+  features: string[];
+  subtext: string;
+  buttonText: string;
+  processingRates: string[];
+}
+
+function PricingCard({ title, price, description, features, subtext, buttonText, processingRates }: PricingCardProps) {
   return (
     <Card className="flex flex-col h-full">
       <div className="flex-grow">
@@ -253,11 +268,10 @@ function PricingCard({ title, price, description, features ,subtext,buttonText,p
           </ul>
         </CardContent>
         <CardContent className="mt-auto">
-
-        <Button className="w-full mt-auto border-gray-200 bg-blue-500 hover:bg-blue-400">{buttonText}</Button>
+          <Button className="w-full mt-auto border-gray-200 bg-blue-500 hover:bg-blue-400">{buttonText}</Button>
         </CardContent>
       </div>
-  </Card>
+    </Card>
   )
 }
 
