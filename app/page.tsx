@@ -121,7 +121,14 @@ export default function Home() {
                 title="Starter"
                 price="AED0"
                 description="Perfect for new and small businesses"
-                features={["Apple Tap to Pay", "Basic inventory management", "Up to 2 employees", "Customer database",   "Issue exchanges",]}
+                features={["Access to core POS functionality",
+                  "Daily sales insights, inventory tracking",
+                  "One device with POS access",
+                  "Customer database",
+                  "Issue exchanges",
+                  "Tap to pay and contactless payment support",
+                  "Generate and send online reciepts"]}
+
                 subtext="No monthly fees"
                 processingRates={["2.6% + AED0.5 (in person)",]}
                 buttonText= "Get started"
@@ -132,10 +139,11 @@ export default function Home() {
                 description="Ideal for growing businesses"
                 features={[
                   "All Starter features",
-                  "Advanced inventory management",
-                  "Up to 10 employees",
-                  "Financial forecasting",
+                  "Customizable product categories and discount options",
+                  "Advanced reporting (sales trends, customer data, inventory forecasting)",
+                  "Up to 5 devices with POS access and 10 employees",
                   "QuickBooks integration",
+                  "Create your own loyalty programs and issue gift cards"
                 ]}
             subtext="Per month, per location"
                 processingRates={["2.4% + AED0.5 (in person)",]}
@@ -147,11 +155,11 @@ export default function Home() {
                 description="For established multi-location businesses"
                 features={[
                   "All Growth features",
-                  "Unlimited employees",
-                  "Multi-branch support",
-                  "Advanced analytics",
-                  "Priority support",
+                  "One on one on boarding",
                   "Custom integrations",
+                  "Advanced analytics & AI-powered insights tailored to your business",
+                  "Dedicated account manager and 24/7 support",
+                  "Comprehensive employee reports"
                 ]}
 
                 subtext="Must meet eligibility requirements"
