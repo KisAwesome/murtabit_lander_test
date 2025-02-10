@@ -43,6 +43,6 @@ export async function joinWaitlist({ name, email } : {name: string, email: strin
     return { success: true, messageId: info.messageId };
   } catch (error) {
     console.error("Error joining waitlist:", error);
-    return { success: false, error: error.message };
+    return { success: false };
   }
 }
