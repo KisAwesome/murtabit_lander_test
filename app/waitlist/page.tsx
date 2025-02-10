@@ -51,7 +51,7 @@ export default function Waitlist() {
             </CardHeader>
             <CardContent>
               {submitted ? (
-                <p className="text-green-500 font-semibold">Thank you! You've been added to the waitlist.</p>
+                <p className="text-green-500 font-semibold">Thank you! You&apos;ve been added to the waitlist.</p>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <Input
