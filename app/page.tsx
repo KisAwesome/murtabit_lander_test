@@ -12,6 +12,7 @@ import {
   PieChart,
   Megaphone,
 } from "lucide-react"
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -31,8 +32,8 @@ export default function Home() {
             </a>
           </nav>
           <div className="ml-auto flex items-center space-x-4">
-            <Button variant="outline">Log in</Button>
-            <Button>Sign up</Button>
+            {/* <Button variant="outline">Log in</Button>
+            <Button>Sign up</Button> */}
           </div>
         </div>
       </header>
@@ -50,8 +51,10 @@ export default function Home() {
             customer base – all from your iPhone.
           </p>
         </div>
-        <div className="flex space-x-4">
-          <Button size="lg">Get Started</Button>
+              <div className="flex space-x-4">
+                <Link href='/waitlist'>
+                <Button size="lg">Join the waitlist</Button>
+                </Link>
           <Button variant="outline" size="lg">Learn More</Button>
         </div>
       </div>
@@ -182,8 +185,12 @@ export default function Home() {
         </p>
       </div>
       <div className="flex space-x-4">
-        <Button size="lg">Get Started Now</Button>
-        <Button variant="outline" size="lg">Contact Sales</Button>
+              <Link href='/waitlist'>
+                <Button size="lg">Join the waitlist</Button>
+                </Link>
+                <Link href='/contact'>
+                <Button variant="outline" size="lg">Contact Sales</Button>
+                </Link>
       </div>
     </div>
   </div>
